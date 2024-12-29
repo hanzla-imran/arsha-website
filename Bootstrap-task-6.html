@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Arsha Bootstrap Template Demo</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/B-logo.PNG">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    body {
+      font-family: "Open Sans","Jost", sans-serif;
+      color: #5e5e5e;
+    }
+
+    .navbar {
+      /*background-color: #37517e;*/
+      position: fixed;
+      width: 100%;
+    }
+    .nav-item {
+      padding: 18px;
+      padding-top: 2px;
+    }
+    .navbar-brand {
+      font-family: "Jost", sans-serif;
+      letter-spacing: 2px;
+      font-size: 30px;
+      font-weight: 500;
+      color: white;
+      padding-left: 46px;
+    }
+    .header-scrolled {
+      background: rgba(40, 58, 90, 0.9);
+    }
+
+    #header {
+      transition: all 0.5s;
+      z-index: 997;
+      padding: 4px 0;
+      height: 80px;
+    }
+
+    .fixed-top {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+    }
+    
+    .nav-btn a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-btn {
+      border: 2px solid #59b3e4;
+      
+      width: 130px;
+      height: 43px;
+      font-size: 16px;
+      font-weight: 500;
+      
+    }
+    .btn:hover {
+      background-color: #59b3e4;
+      border: 2px solid #59b3e4;
+    }
+
+    
+
+    .container {
+      padding-left: 30px;
+    } 
+  
+    .btn-wh {
+      width: 148px;
+      height: 46px;
+      background-color: #59b3e4;
+      font-size: 16px;
+      font-weight: 500;
+      border: 2px solid #59b3e4;
+    }
+
+    .para {
+      margin: 5px 0 30px 0;
+      font-size: 22px;
+      line-height: 1.3;
+      font-weight: 600;
+      color: #aebacb;
+    }
+
+    .bordr {
+      border: none;
+      background-color: #37517e;
+      color: white;
+    }
+
+    .weight {
+      font-weight: 700;
+      color: #37517e;
+      font-family: "Jost", sans-serif;
+    }
+
+
+    .about-btn {
+      width: 150px;
+      height: 41px;
+      font-size: 16px;
+      font-weight: 500;
+      border: 2px solid #59b3e4;
+      color: #59b3e4;
+    }
+    .cta {
+      background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url(assets/img/bg-img.JPG) fixed center center;
+      background-size: cover;
+      padding: 120px 0;
+    }
+
+    .navbar-nav {
+      padding-left: 83px;
+    }
+
+    hr {
+      width: 52px;
+      float: right;
+      margin-top: 0px;
+      margin-right: 144px;
+      color: #4277d3;
+    }
+
+    .d-f {
+      display: flex;
+    }
+
+    .card-img-1 {
+      margin-top: 31px;
+    } 
+
+    .card-img-1 img {
+      width: 125px;
+      border-radius: 85px;
+      margin-left: 24px;
+    }
+
+    .card-img-2 {
+      line-height: 9px;
+      margin-top: 27px;
+      margin-left: 27px;
+      font-size: 15px;
+    }
+
+    .contact-styl-h4 {
+      color: #37517e; 
+      font-size: 22px; 
+      font-weight: 600; 
+      margin-bottom: 5px;
+    }
+
+    .contact-styl-p {
+      font-size: 14px; 
+      color: #6182ba;
+    }
+
+    .bg-col {
+      width: 170px;
+      height: 48px;
+      background-color: #59b3e4;
+      border: 2px solid #59b3e4;
+    }
+
+    .card-font {
+      font-weight: 500;
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #37517e;
+      padding: 10px 0 10px 30px;
+    }
+
+    .font-h {
+      font-size: 48px;
+      color: #37517e;
+      font-weight: 400;
+      font-family: "Jost", sans-serif;
+      margin-bottom: 25px;
+      padding: 10px 0 10px 30px;
+    }
+
+    .card-span {
+      color: #47b2e4;
+      font-size: 18px;
+      display: block;
+    }
+
+    .pricing-li {
+      padding: 10px 0 10px 30px;
+      position: relative;
+    }
+
+    .pricing-btn {
+      width: 141px;
+      height: 45px;
+      margin-bottom: 37px;
+    }
+
+     .section-title h2 { 
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
+      color: #37517e;
+    } 
+     
+     .section-title h2::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 1px;
+      background: #ddd;
+      bottom: 1px;
+      left: calc(50% - 60px);
+    } 
+
+    .section-title h2::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: #47b2e4;
+      bottom: 0;
+      left: calc(50% - 20px);
+    } 
+
+    .service-btn {
+      width: 200px;
+      height: 48px;
+      margin-top: 35px;
+      border: 2px solid white;
+      color: white;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .border-wt {
+      border: none;
+      width: 49%;
+      height: 41px;
+      background-color: white;
+      border-radius: 50px;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+    }
+
+    .hov {
+      background-color: #e7f5fb;
+      color: #65bde7;
+      font-size: 23px;
+      border: none;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 12px;
+      padding-right: 12px;
+      border-radius: 50px;
+    }
+    .hov:hover {
+      color: white;
+      background-color: #47b2e4;
+    }
+
+    .accordion-button:hover {
+      color: #5ab4e4;
+    }
+
+    .progress-font {
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      color: #37517e;
+      font-size: 13px;
+    }
+
+    .accord-hov {
+      color:#37517e;
+    }
+    .accord-hov:hover {
+      color: #5ab4e4;
+    }
+
+    .head-col {
+      color:  #37517e;;
+    }
+
+    .head-col:hover {
+      color: #5ab4e4;
+      cursor: pointer;
+    }
+
+    .img-hov {
+      color: black;
+    }
+
+    .img-hov:hover {
+      color:#4277d3;
+    }
+
+    .portfolio-links {
+      color: #5e5e5e;
+      height: 30px; 
+      font-size: 14px; 
+      font-weight: 600; 
+      width: 56px; 
+      padding-bottom: 26px;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .portfolio-links:hover {
+      background-color: #47b2e4;
+      color: white;
+      border-radius: 50px;
+    }
+
+    .hero {
+      background-color: #eff2f8;
+      color: #37517e;
+      font-size: 19px;
+      border: none;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 9px;
+      padding-right: 8px;
+      border-radius: 50px;
+    }
+
+    .hero:hover {
+      color: white;
+      background-color: #47b2e4;
+    }
+
+    .footer-ico {
+      background-color: #59b3e4;
+      color: white;
+      font-size: 19px;
+      border: none;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 9px;
+      padding-right: 8px;
+      border-radius: 50px;
+    }
+
+    .footer-ico:hover {
+      background: #209dd8;
+    }
+
+    .bar-h {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .bar-h:hover {
+      color: #47b2e4;
+    }
+
+    .btn-hov {
+      font-family: "Open Sans", sans-serif;
+      margin-top: 8px; 
+      font-size: 32px; 
+      border:none; 
+      color: white; 
+      margin-left: 19px;
+    }
+
+    .btn-hov span {
+      font-size: 15px; 
+      margin-top: 7px; 
+      margin-left: 8px;
+    }
+
+    .btn-hov i:hover {
+      color: #47b2e4;
+    }
+
+    .foot-link {
+      padding: 10px 0;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .foot-link img {
+      width: 16px; 
+      margin-top: -3px;
+    }
+
+    .foot-link:hover {
+      color: #47b2e4;
+      cursor: pointer;
+    }
+
+    .last-lin span {
+      color: #53a3d0; 
+    }
+
+    .last-lin span:hover {
+      color: #59b3e4;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid" style="background-color: #37517e;">
+  <header id="header" class="fixed-top header-scrolled">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ARSHA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#scrollspyHome"><span class="bar-h"><a href="#Home"  class="bar-h" >Home</a></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyAbout"><span><a href="#About"  class="bar-h" >About</a></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span><a href="#Services"  class="bar-h" >Services</a></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span><a href="#Portfolio"  class="bar-h" >Portfolio</a></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span><a href="#Team"  class="bar-h" >Team</a></span></a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span><a href="#Contact"  class="bar-h" >Contact</a></span></a>
+          </li>
+        </ul>
+        <div style="width: 31%;">
+          <button type="button" class="btn btn-outline-primary rounded-pill nav-btn" style="float: inline-end;"><a href="#Contact" > Contact Us</a></button>
+        </div>
+        </div>
+    </div>
+  </nav>
+</header>
+
+  <div class="container-fluid" style="margin-top: 80px;">
+    <div class="row ">
+      <div class="col-md-6 p-3  text-white">
+        <div class="container">
+          <h1 style="font-weight: 700; font-size: 47px;"> Better Solutions For <br> Your Business </h1>
+          
+          <p class="para"> We are team of talented designers making <br> websites with Bootstrap </p>
+          <div class="d-flex">
+          <button type="button" class="btn btn-primary rounded-pill btn-wh">Get Search</button>
+          <button class="btn-hov d-flex bg-transparent"><i class="fa-regular fa-circle-play"></i> <span>Watch Video</span></button>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6 p-3  text-white">
+        <img src="assets/img/B-img-2.PNG" style="width: 83%;" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<section style="background-color: #f3f5fa;">
+    <div class="container d-flex" style="padding-top: 22px; padding-bottom: 18px;">
+         <div class="row">
+          <div class="col-md-2">
+        <img src="assets/img/b-img--4.PNG" class="d-block" alt="..." style="width: 95px; margin-left: 22px;">
+      </div>
+        <div class="col-md-2">
+        <img src="assets/img/B-img-5.PNG" class="d-block" alt="..." style="width: 95px; margin-left: 22px;">
+      </div>
+        <div class="col-md-2">
+        <img src="assets/img/B-img-6.PNG" class="d-block" alt="..." style="width: 131px; margin-left: 22px;">
+      </div>
+        <div class="col-md-2">
+        <img src="assets/img/B-img-7.PNG" class="d-block" alt="..." style="width: 56px; margin-left: 60px;">
+      </div>
+        <div class="col-md-2">
+        <img src="assets/img/B-img-8.PNG" class="d-block" alt="..." style="width: 86px; margin-left: 22px;">
+      </div>
+        <div class="col-md-2">
+        <img src="assets/img/B-img-9.PNG" class="d-block" alt="..." style="width: 86px; margin-left: 22px;">
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid text-center mt-5">
+    <div class="section-title">
+      <h2 class="text-center mt-5" id="About">
+       About Us  
+      </h2>
+  </div>
+  </div>
+  <div class="container-sm text-center">
+    
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-6">
+        <p style="font-size: 17px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br>
+          do eiusmod tempor incididunt ut labore et dolore magna <br>
+          aliqua.</p>
+        <ul class="list-group" style="list-style-type: none;">
+          <li class="list-item" style="font-size: 17px;"><img src="assets/img/double-check.PNG" style="width: 21px;" /> Ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</li>
+          <li class="list-item" style="font-size: 17px;"><img src="assets/img/double-check.PNG" style="width: 21px;" /> Duis aute irure dolor in reprehenderit in
+            voluptate velit.</li>
+          <li class="list-item" style="font-size: 17px;"><img src="assets/img/double-check.PNG" style="width: 21px;" /> Ullamco laboris nisi ut aliquip ex ea commodo
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <p style="font-size: 17px;"> Ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse <br>
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <br>
+          cupidatat non proident, sunt in culpa qui officia deserunt <br>
+          mollit anim id est laborum. </p>
+        <button type="button" class="btn btn-outline-primary about-btn">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="pb-5" style="background-color: #f3f5fa; padding-top: 84px; margin-top: 79px;">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 style="color: #37517e;"> Eum ipsam laborum deleniti <span style="font-weight: 700;">velit
+            pariatur architecto aut nihil                                
+            </span>  </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>
+          tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in<br>
+          reprehenderit</p>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item" style="width: 86%; border: none; border-radius: 2px;">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button shadow-none bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne" style="font-size: 16px; line-height: 24px; font-weight: 500; font-family:Poppins, sans-serif; padding: 20px;">
+               <span style="color: #5ab4e4; margin-top: -23px; font-weight: 600; font-size: 19px;">01</span>  <span style="margin-left: 14px;"> Non consectetur a erat nam at lectus urna duis?</span>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Feugiat pretium nibh ipsum consequat.<br>
+                 Tempus iaculis urna id volutpat lacus laoreet<br>
+                  non curabitur gravida. Venenatis lectus magna<br>
+                   fringilla urna porttitor rhoncus dolor purus<br>
+                    non.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="width: 86%; border: none; border-radius: 2px;">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed shadow-none bg-transparent" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="margin-top: 15px; font-size: 16px; line-height: 24px; font-weight: 500; font-family:Poppins, sans-serif; padding: 20px;">
+                <span style="color: #5ab4e4; margin-top: -23px; font-weight: 600; font-size: 19px;">02</span> <span style="margin-left: 14px;"> Feugiat scelerisque varius morbi enim nunc?</span>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="width: 86%; border: none; border-radius: 2px;">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed shadow-none bg-transparent" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="margin-top: 15px; font-size: 16px; line-height: 24px; font-weight: 500; font-family:Poppins, sans-serif; padding: 20px;">
+                <span style="color: #5ab4e4; margin-top: -23px; font-weight: 600; font-size: 19px;">03</span> <span style="margin-left: 14px;"> Dolor sit amet consectetur adipiscing elit?</span>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <img src="assets/img/B-img-3.PNG" class="w-100" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <div class="container mt-5" style="padding-top: 18px; padding-bottom: 46px;">
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="assets/img/B-img-12.PNG" class="w-100" />
+        
+      </div>
+      <div class="col-sm-6 mt-4">
+           <h1 style="font-weight: 700; color: #37517e;"> Voluptatem dignissimos provident quasi corporis voluptates </h1>
+              <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
+              
+              <div style="margin-top: 20px;">
+                 <span class="mt-3 progress-font">HTML</span>  <span class="float-end progress-font">100%</span>
+                 
+              <div class="progress mt-1" style="border-radius: 0px; height: 10px;">
+                <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="background-color: #4668a2;"></div>
+              </div>
+            </div>
+          
+              <div style="margin-top: 20px;">
+              <span class="progress-font">CSS</span> <span class="float-end progress-font">90%</span>
+              <div class="progress mt-1" style="border-radius: 0px; height: 10px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%; background-color: #4668a2;"></div>
+              </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+              <span class="progress-font">JAVASCRIPT</span> <span class="float-end progress-font">75%</span>
+              <div class="progress mt-1" style="border-radius: 0px; height: 10px;">
+                <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="background-color: #4668a2;"></div>
+              </div>
+            </div>
+ 
+            <div style="margin-top: 20px;">
+              <span class="progress-font">PHOTOSHOP</span> <span class="float-end progress-font">55%</span>
+              <div class="progress mt-1" style="border-radius: 0px; height: 10px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%; background-color: #4668a2;"></div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+
+     
+    <section style="background-color:#f3f5fa; padding-top: 21px;">
+      <div class="container-fluid">
+        <div class="section-title">
+             <h2 class="text-center mt-5" id="Services">  
+              SERVICES    
+            </h2>
+          </div>
+            </div>
+      <div class="container mt-5">
+              <p class="text-center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic <br>quas.</p>
+      </div>
+      
+         <div class="container">
+          <div class="row">
+         <div class="col-md-6">
+          <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color: white;">
+            
+              <img src="assets/img/ball-of-basketball.png" style="margin-top: 46px; margin-left: 16px; width: 27px;" />
+              <h3 class="head-col" style=" margin-left: 16px; margin-top: 16px;">Lorem Ipsum</h3>
+              <p style=" margin-left: 16px; margin-top: 11px;  font-family: Poppins, sans-serif; font-size: 14px; padding-bottom: 27px;">Voluptatum deleniti atque corrupti quos dolores <br>et quas molestias excepturi</p>
+            
+             
+            
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color: white;">
+            <img src="assets/img/document.png" style="margin-top: 46px; margin-left: 16px; width: 27px;" />
+              <h3 class="head-col" style=" margin-left: 16px; margin-top: 16px;">Sed ut perspici</h3>
+              <p style=" margin-left: 16px; margin-top: 11px;  font-family: Poppins, sans-serif; font-size: 14px; padding-bottom: 27px;">Duis aute irure dolor in reprehenderit in <br>voluptate velit esse cillum dolore</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color: white;">
+            
+              <img src="assets/img/tachometer.png" style="margin-top: 46px; margin-left: 16px; width: 27px;" />
+              <h3 class="head-col" style=" margin-left: 16px; margin-top: 16px;">Magni Dolores</h3>
+              <p style=" margin-left: 16px; margin-top: 11px;  font-family: Poppins, sans-serif; font-size: 14px; padding-bottom: 27px;">Excepteur sint occaecat cupidatat non proident, sunt<br> in culpa qui officia</p>
+            
+             
+            
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color: white;">
+            
+              <img src="assets/img/layer.png" style="margin-top: 46px; margin-left: 16px; width: 27px;" />
+              <h3 class="head-col" style=" margin-left: 16px; margin-top: 16px;">Nemo Enim</h3>
+              <p style=" margin-left: 16px; margin-top: 11px; font-family: Poppins, sans-serif; font-size: 14px; padding-bottom: 27px;">At vero eos et accusamus et iusto odio dignissimos<br> ducimus qui blanditiis</p>
+            
+             
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </section>
+  
+
+    <section class="cta">
+           <div class="container mt-2">
+            <div class="row">
+              <div class="col-lg-9">
+              <h3 style="color:#fff; font-size: 28px; font-weight: 700;">Call To Action</h3>
+                <p style="color:#fff;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla <br>
+                   pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt <br> 
+                   mollit anim id est laborum.</p> 
+                   </div>
+                   <div class="col-lg-3">
+                   <button type="button" class="btn btn-outline-primary rounded-pill service-btn">Call To Action</button>
+              </div>
+                  </div>
+           </div>
+    </section>
+
+
+       <div class="container text-center">
+        <div class="section-title">
+          <h2 class="text-center mt-5" id="Portfolio">
+            PORTFOLIO
+           </h2>
+           </div>
+
+    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit.<br>
+       Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic<br>
+       quas.</p>
+      </div>
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-center">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active portfolio-links rounded-pill" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" style="background-color: #47b2e4;">All</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link portfolio-links" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">App</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link portfolio-links" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">card</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link portfolio-links" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Web</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <div class="container">
+              <div class="row">
+            <div class="col-md-4">
+            <img src="assets/img/arsha-1.JPG" class="w-100 mt-4" />
+     
+            <img src="assets/img/arsha-4.JPG" class="w-100 mt-4" />
+   
+          </div>
+          <div class="col-md-4">
+            <img src="assets/img/arsha-2.JPG" class="w-100 mt-4" />
+            <img src="assets/img/arsha-5.JPG" class="w-100 mt-4" />
+            <img src="assets/img/arsha-8.JPG" class="w-100 mt-4" />
+            
+          </div>
+          <div class="col-md-4">
+            <img src="assets/img/arsha-3.JPG" class="w-100 mt-4" />
+            <img src="assets/img/arsha-6.JPG" class="w-100 mt-4" />
+            <img src="assets/img/arsha-7.JPG" class="w-100 mt-4" />
+            <img src="assets/img/arsha-9.JPG" class="w-100 mt-4" />
+               </div>
+             </div>
+           </div>  
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="container">
+              <div class="row">
+            <div class="col-md-4">
+            <img src="assets/img/arsha-1.JPG" class="w-100 mt-4" />
+            </div>
+            <div class="col-md-4">
+            <img src="assets/img/arsha-3.JPG" class="w-100 mt-4" />
+          </div>
+          <div class="col-md-4">
+            <img src="assets/img/arsha-4.JPG" class="w-100 mt-4" />
+            </div>
+          </div>
+        </div>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+            <div class="container">
+              <div class="row">
+            <div class="col-md-4">
+            <img src="assets/img/arsha-6.JPG" class="w-100 mt-4" />
+          </div>
+            <div class="col-md-4">
+            <img src="assets/img/arsha-7.JPG" class="w-100 mt-4" />
+          </div>
+          <div class="col-md-4">
+            <img src="assets/img/arsha-9.JPG" class="w-100 mt-4" />
+          </div>
+          </div>
+        </div>
+          </div>
+          <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+            <div class="container">
+              <div class="row">
+            <div class="col-md-4">
+            <img src="assets/img/arsha-2.JPG" class="w-100 mt-4" />
+          </div>
+          <div class="col-md-4">
+            <img src="assets/img/arsha-5.JPG" class="w-100 mt-4" />
+          </div>
+            <div class="col-md-4">
+            <img src="assets/img/arsha-8.JPG" class="w-100 mt-4" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      
+
+    <section style="background-color:#f3f5fa; padding-top: 31px; margin-top: 69px; padding-bottom: 7%;">
+      <div class="section-title">
+        <h2 class="text-center mt-5" id="Team">TEAM </h2>
+        </div>
+       <div class="container text-center mt-5">
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit.<br>
+               Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic 
+              <br> quas.</p>
+            </div>
+        
+           <div class="container">
+            <div class="row">
+           <div class="col-md-6">
+            <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: white; box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);">
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/img/card-img-3.jpg" style="width: 114px; border-radius: 59px; margin-left: 13px; margin-top: 37px;" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2" style="color: #37517e;">Walter White</strong>
+                <p class="mb-0">Chief Executive Officer</p>
+                <div class="mb-1 text-muted" style="border-bottom: 1px solid #4277d3; width: 17%;"></div>
+                <p class="card-text mb-auto">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <div class="mt-2" style="display: flex;">
+                  <div style="width: 14%;"><a href="#" class="hero"><i class="fa-brands fa-twitter"></i></a></div>
+                  <div style="width: 14%;"><a href="#" class="hero" style="padding-left: 12px; padding-right: 11px;"><i class="fa-brands fa-facebook-f"></i></a></div>
+                  <div style="width: 14%;"><a href="#" class="hero"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div style="width: 14%;"><a href="#" class="hero"><i class="fa-brands fa-linkedin"></i></a></div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: white; box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);">
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/img/card-img-4.jpg" style="width: 114px; border-radius: 59px; margin-left: 13px; margin-top: 37px;" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2" style="color: #37517e;">Sarah Jhonson</strong>
+                <p class="mb-0">Product Manager</p>
+                <div class="mb-1 text-muted" style="border-bottom: 1px solid #4277d3; width: 17%;"></div>
+                <p class="card-text mb-auto">Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <div class="mt-2" style="display: flex;">
+                  <div style="width: 14%;"><a href="#" class="hero"><i class="fa-brands fa-twitter"></i></a></div>
+                  <div style="width: 14%;"><a href="#" class="hero" style="padding-left: 12px; padding-right: 11px;"><i class="fa-brands fa-facebook-f"></i></a></div>
+                  <div style="width: 14%;"><a href="#" class="hero"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div style="width: 14%;"><a href="#" class="hero"><i class="fa-brands fa-linkedin"></i></a></div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: white; box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);">
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/img/card-img-5.jpg" style="width: 114px; border-radius: 59px; margin-left: 13px; margin-top: 37px;" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2" style="color: #37517e;">William Anderson</strong>
+                <p class="mb-0">CTO</p>
+                <div class="mb-1 text-muted" style="border-bottom: 1px solid #4277d3; width: 17%;"></div>
+                <p class="card-text mb-auto">Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <div class="mt-2" style="display: flex;">
+                  <div style="width: 14%;"><a href="#" class="hero"><i class="fa-brands fa-twitter"></i></a></div>
+                  <div style="width: 14%;"><a href="#" class="hero" style="padding-left: 12px; padding-right: 11px;"><i class="fa-brands fa-facebook-f"></i></a></div>
+                  <div style="width: 14%;"><a href="#" class="hero"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div style="width: 14%;"><a href="#" class="hero"><i class="fa-brands fa-linkedin"></i></a></div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+
+         
+
+          <div class="col-md-6">
+            <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: white; box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);">
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/img/card-img-6.jpg" style="width: 114px; border-radius: 59px; margin-left: 13px; margin-top: 37px;" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2" style="color: #37517e;">Amanda Jepson</strong>
+                <p class="mb-0">Accountant</p>
+                <div class="mb-1 text-muted" style="border-bottom: 1px solid #4277d3; width: 17%;"></div>
+                <p class="card-text mb-auto"> Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <div class="mt-2" style="display: flex;">
+                  <div style="width: 14%;"><a href="#" class="hero"><i class="fa-brands fa-twitter"></i></a></div>
+                  <div style="width: 14%;"><a href="#" class="hero" style="padding-left: 12px; padding-right: 11px;"><i class="fa-brands fa-facebook-f"></i></a></div>
+                  <div style="width: 14%;"><a href="#" class="hero"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div style="width: 14%;"><a href="#" class="hero"><i class="fa-brands fa-linkedin"></i></a></div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <div class="section-title">
+      <h2 class="text-center mt-5">PRICING </h2>
+       </div>
+    <div class="container mt-5">
+      <p class="text-center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. <br>
+        Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic <br>
+         quas.</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+    <div class="col-md-4 text-center mt-2">
+      <div class="card" style="border: none; box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);">
+       
+        <div class="card-body">
+          <h3 class="card-text card-font text-start mt-4">Free Plan</h3>
+          <h4 class="weight mt-0 font-h text-start" ><sup style="font-size: 28px;">$</sup> 0 
+          <span class="card-span">per month</span>  </h4>
+          <ul class="text-start" style="list-style-type: none; color: #999; padding: 20px 0; line-height: 20px; margin-top: -18px;">
+            <li class="pricing-li"><img src="assets/img/check-symbol.png" style="width:19px;" /><span style="margin-left: 13px;">Quam adipiscing vitae proin</span></li>
+            <li class="pricing-li"><img src="assets/img/check-symbol.png" style="width:19px;" /><span style="margin-left: 13px;">Nec feugiat nisl pretium</span></li>
+            <li class="pricing-li"><img src="assets/img/check-symbol.png" style="width:19px;" /><span style="margin-left: 13px;">Nulla at volutpat diam uteera</span></li>
+            <li class="pricing-li"><img src="assets/img/check-symbol.png" style="width:19px;" /><span style="margin-left: 13px;">Pharetra massa massa ultricies</span></li>
+            <li class="pricing-li"><img src="assets/img/check-symbol.png" style="width:19px;" /><span style="margin-left: 13px;">Massa ultricies mi quis hendrerit</span></li>
+          </ul>
+          <button type="button" class="btn btn-outline-primary rounded-pill pricing-btn" style="float: left; margin-left: 30px;">Get Started</button>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 text-center mt-2">
+      <div class="card" style="border: none; box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1); border-top: 4px solid #47b2e4;">
+       
+        <div class="card-body">
+          <h3 class="card-text card-font text-start mt-4">Business Plan</h3>
+          <h4 class="weight text-start mt-0 font-h"><sup style="font-size: 28px;">$</sup> 29
+                   <span class="card-span">per month </span>  </h4>
+           <ul class="text-start" style="list-style-type: none; color: #999; padding: 20px 0; line-height: 20px; margin-top: -18px;">
+            <li class="pricing-li"><img src="assets/img/check-symbol.png" style="width:19px;" /><span style="margin-left: 13px;">Quam adipiscing vitae  proin</span></li>
+            <li class="pricing-li"><img src="assets/img/check-symbol.png" style="width:19px;" /><span style="margin-left: 13px;">Nec feugiat nisl pretium</span></li>
+            <li class="pricing-li"><img src="assets/img/check-symbol.png" style="width:19px;" /><span style="margin-left: 13px;">Nulla at volutpat diam  uteera</span></li>
+            <li class="pricing-li"><img src="assets/img/check-symbol.png" style="width:19px;" /><span style="margin-left: 13px;">Pharetra massa massa ultricies</span></li>
+            <li class="pricing-li"><img src="assets/img/check-symbol.png" style="width:19px;" /><span style="margin-left: 13px;">Massa ultricies mi quis hendrerit</span></li>
+          </ul>
+          <button type="button" class="btn btn-primary rounded-pill pricing-btn" style="background: #47b2e4; border: 1px solid #47b2e4; float: left; margin-left: 30px;">Get Started</button>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 text-center mt-2">
+      <div class="card" style="border: none; box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);">
+       
+        <div class="card-body">
+          <h3 class="card-text card-font text-start mt-4">Developer Plan</h3>
+          <h4 class="weight text-start mt-0 font-h"><sup style="font-size: 28px;">$</sup> 49 
+          <span class="card-span">per month</span> </h4>
+          <ul class="text-start" style="list-style-type: none; color: #999; padding: 20px 0; line-height: 20px; margin-top: -18px;">
+            <li class="pricing-li"><img src="assets/img/check-symbol.png" style="width:19px;" /><span style="margin-left: 13px;">Quam adipiscing vitae  proin</span></li>
+            <li class="pricing-li"><img src="assets/img/check-symbol.png" style="width:19px;" /><span style="margin-left: 13px;">Nec feugiat nisl pretium</span></li>
+            <li class="pricing-li"><img src="assets/img/check-symbol.png" style="width:19px;" /><span style="margin-left: 13px;">Nulla at volutpat diam  uteera</span></li>
+            <li class="pricing-li"><img src="assets/img/check-symbol.png" style="width:19px;" /><span style="margin-left: 13px;">Pharetra massa massa ultricies</span></li>
+            <li class="pricing-li"><img src="assets/img/check-symbol.png" style="width:19px;" /><span style="margin-left: 13px;">Massa ultricies mi quis hendrerit</span></li>
+          </ul>
+          <button type="button" class="btn btn-outline-primary rounded-pill pricing-btn" style="float: left; margin-left: 30px;">Get Started</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+   
+    <section class="mt-5" style="background-color: #f3f5fa; padding-top: 5px; padding-bottom: 94px;">
+      <div class="section-title">
+        <h2 class="text-center mt-5">Frequently Asked Questions </h2>
+        </div>
+      <div class="container mt-5">
+        <p class="text-center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit.<br>
+           Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic<br>
+           quas.</p>
+      </div>
+      <div class="container mt-5">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed shadow-none bg-transparent accord-hov" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style=" font-weight: 500; font-size: 16px; font-family: Poppins, sans-serif;">
+                 <img src="assets/img/help.png" style="width: 23px;" /> <span style="margin-left: 9px;">Non consectetur a erat nam at lectus urna duis?</span>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed shadow-none bg-transparent accord-hov" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="margin-top: 16px; font-weight: 500; font-size: 16px; font-family: Poppins, sans-serif;">
+                <img src="assets/img/help.png" style="width: 23px;" /> <span style="margin-left: 9px;">Feugiat scelerisque varius morbi enim nunc?</span>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"> Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed shadow-none bg-transparent accord-hov" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="margin-top: 16px; font-weight: 500; font-size: 16px; font-family: Poppins, sans-serif;">
+                <img src="assets/img/help.png" style="width: 23px;" /> <span style="margin-left: 9px;">Dolor sit amet consectetur adipiscing elit?</span>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingfour">
+              <button class="accordion-button collapsed shadow-none bg-transparent accord-hov" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour" style="margin-top: 16px; font-weight: 500; font-size: 16px; font-family: Poppins, sans-serif;">
+                <img src="assets/img/help.png" style="width: 23px;" /> <span style="margin-left: 9px;">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span>
+              </button>
+            </h2>
+            <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingfive">
+              <button class="accordion-button collapsed shadow-none bg-transparent accord-hov" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive" style="margin-top: 16px; font-weight: 500; font-size: 16px; font-family: Poppins, sans-serif;">
+                <img src="assets/img/help.png" style="width: 23px;" /> <span style="margin-left: 9px;">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</span>
+              </button>
+            </h2>
+            <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</div>
+            </div>
+          </div>
+        </div>
+    </div>  
+
+     
+    </section>
+
+
+    <div class="section-title">
+      <h2 class="text-center mt-5" id="Contact" style=" font-size: 32px;">CONTACT </h2>
+      </div>
+    <p class="text-center mt-5">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit.<br>
+       Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic<br>
+       quas.</p>
+
+        <div class="container">
+       <div class="row mb-2">
+        <div class="col-md-5">
+          <div class="row g-0 overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1); border-top: 3px solid #47b2e4; border-bottom: 3px solid #47b2e4;">
+            <div class="container mt-5">
+              <div class="row mb-2">
+               <div class="col-md-3">
+            <a href="#" class="hov"><i class="fa-solid fa-location-dot"></i></a>
+            </div>
+            <div class="col-md-9" style="padding: 0px;">
+            <h4 class="contact-styl-h4">Location:</h4>
+            <p class="contact-styl-p">A108 Adam Street, New York, NY <br>535022</p>
+             </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row mb-2">
+             <div class="col-md-3">
+              <a href="#" class="hov"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <div class="col-md-9" style="padding: 0px;">
+            <h4 class="contact-styl-h4">Email:</h4>
+            <p class="contact-styl-p">info@example.com</p>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="container">
+        <div class="row mb-2">
+         <div class="col-md-3">
+          <a href="#" class="hov"><i class="fa-solid fa-mobile-screen-button"></i></a>
+        </div>
+        <div class="col-md-9" style="padding: 0px;">
+            <h4 class="contact-styl-h4">Call:</h4>
+            <p class="contact-styl-p">+1 5589 55488 55s</p>
+          </div>
+        </div>
+      </div>
+           <div class="container mb-4">
+            <div class="map-area">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d110286.99759015025!2d71.42052976235185!3d30.25222479888556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sZotect%20soft!5e0!3m2!1sfr!2s!4v1725266846822!5m2!1sfr!2s" width="310" height="290" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="row g-0 overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1); border-top: 3px solid #47b2e4; border-bottom: 3px solid #47b2e4;">
+            <div class="container" style="font-family: Open Sans, sans-serif;">
+            <div class="row">
+              <div class="col-md-6 mt-5">
+                <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+                <input type="text" class="form-control shadow-none" aria-label="First name" style="width: 98%; height: 44px; border-radius: 4px;">
+              </div>
+              <div class="col-md-6 mt-5">
+                <label for="exampleFormControlInput1" class="form-label">Your Email</label>
+                <input type="text" class="form-control shadow-none" aria-label="Last name" style="width: 98%; height: 44px; border-radius: 4px;">
+              </div>
+            </div>
+            <div class="mt-4">
+              <label for="exampleFormControlInput1" class="form-label">Subject</label>
+              <input type="email" class="form-control mt-2 shadow-none" id="exampleFormControlInput1" style="height: 43px; border-radius: 4px;">
+            </div>
+            <div class="mt-4">
+              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+              <textarea class="form-control mt-2 shadow-none" id="exampleFormControlTextarea1" rows="8"></textarea>
+            </div>
+            <div class="container text-center mt-3" style="margin-bottom: 30px;">
+            <button type="button" class="btn btn-primary mt-4 rounded-pill bg-col">Send Message</button>
+          </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+       <section style="background-color: #f3f5fa; height: 280px; padding-top: 10px; margin-top: 65px;">
+             <div class="container text-center mt-5">
+              <h4 style="color: #37517e; font-size: 24px; font-weight: 600;">Join Our Newsletter</h4>
+              <p style="padding-top: 17px;">Tamen quem nulla quae legam multos aute sint culpa legam,<br>
+                 noster magna</p>
+             </div>
+             <div class="container d-flex justify-content-center">
+             <div class="border-wt d-flex">
+              <div style="flex: 1;">
+                <input type="search" class="form-control shadow-none" id="inputPassword" style="border-radius: 24px; height: 41px; border: none;">
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary rounded-pill " style="width: 115px; height: 41px; background-color: #59b3e4; border: 1px solid #59b3e4;">Subscribe</button>
+              </div>
+              </div>
+             </div>
+       </section>
+
+
+       <div class="container" style="margin-top: 60px;">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3 class="weight" style="font-size: 28px; font-weight: 600;">ARSHA</h3>
+            <ul style="list-style-type: none; padding-left: 0px; font-size: 14px; line-height: 24px; color: #5e5e5e; ">
+              <li>A108 Adam Street</li>
+              <li>New York, NY 535022</li>
+              <li>United States</li>
+            </ul>
+
+            <ul style="list-style-type: none; padding-left: 0px; font-size: 14px; line-height: 24px; color: #5e5e5e;">
+              <li><b>Phone:</b> +1 5589 55488 55</li>
+              <li><b>Email:</b> info@example.com</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 style="font-size: 16px; font-weight: bold; color: #37517e;"> Useful Links</h4>
+             <ul style="list-style-type: none; padding-left: 0px; font-size: 14px; line-height: 24px; color: #5e5e5e;">
+              <li class="foot-link"><img src="assets/img/next.png" /> Home</li>
+              <li class="foot-link"><img src="assets/img/next.png" />About us</li>
+              <li class="foot-link"><img src="assets/img/next.png" />Services</li>
+              <li class="foot-link"><img src="assets/img/next.png" />Terms of service</li>
+              <li class="foot-link"><img src="assets/img/next.png" />Privacy policy</li>
+             </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 style="font-size: 16px; font-weight: bold; color: #37517e;"> Our Services</h4>
+            <ul style="list-style-type: none; padding-left: 0px; font-size: 14px; line-height: 24px; color: #5e5e5e;">
+             <li class="foot-link"><img src="assets/img/next.png" />Web Design</li>
+             <li class="foot-link"><img src="assets/img/next.png" />Web Development</li>
+             <li class="foot-link"><img src="assets/img/next.png" />Product Management</li>
+             <li class="foot-link"><img src="assets/img/next.png" />Marketing</li>
+             <li class="foot-link"><img src="assets/img/next.png" />Graphic Design</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 style="font-size: 16px; font-weight: bold; color: #37517e;">Our Social Networks</h4>
+            <p style="font-family: Open Sans, sans-serif;">Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                  <a href="#" class="footer-ico"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" class="footer-ico" style="padding-left: 12px; padding-right: 11px;"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" class="footer-ico"><i class="fa-brands fa-instagram"></i></a>
+                 
+                  <a href="#" class="footer-ico"><i class="fa-brands fa-skype"></i></a>
+                  <a href="#" class="footer-ico"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+       </div>
+
+       <div style="background-color: #37517e; color: white;">
+          <div class="container" style= "font-family: Open Sans, sans-serif;">
+            <div class="row">
+              <div class="col-md-9 mt-4 mb-4" style="font-size: 14px;">© Copyright <b>Arsha</b>. All Rights Reserved</div>
+              <div class="col-md-3 mt-4 mb-4 last-lin" style="font-size: 13px;">Designed by<span> BootstrapMade </span></div>
+            </div>
+          </div>
+       </div>
+</body>
+</html>
